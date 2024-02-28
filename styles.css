@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(218, 13%, 24%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    font-family: "Overpass", sans-serif;
+    color: var(--LightGrey);
+}
+
+h1 {
+    color: var(--White);
+}
+.container {
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--DarkBlue);
+    border-radius: 25px;
+    padding: 1.5rem;
+    gap: 1rem;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+
+.roundBtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--LightGrey);
+    background-color: var(--MediumGrey);
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    /* border: solid; */
+}
