@@ -76,6 +76,9 @@ div.starImg  {
     margin-top: 0.8rem;
     /* border: solid; */
 }
+button {
+    border: none;
+}
 
 .roundBtns:hover {
     background-color: var(--Orange);
