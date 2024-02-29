@@ -99,7 +99,8 @@ button:hover {
 }
 
 .ratingState {
-    display: none;
+    /* toggle between default and none */
+    display: ;  
 }
 
 .thankyouState {
