@@ -8,9 +8,9 @@
     --Orange: hsl(25, 97%, 53%);
     --White: hsl(0, 0%, 100%);
     --LightGrey: hsl(217, 12%, 63%);
-    --MediumGrey: hsl(218, 13%, 24%);
-    --DarkBlue: hsl(213, 19%, 18%);
-    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --MediumGrey: hsl(210,19%,18%);
+    --DarkBlue: hsl(215,22%,15%);
+    --VeryDarkBlue: hsl(228,11%,9%);
 }
 
 body {
@@ -21,32 +21,49 @@ body {
     align-items: center;
     padding: 1rem;
     font-family: "Overpass", sans-serif;
+    font-size: 15px;
     color: var(--LightGrey);
+    line-height: 1.5;
 }
 
 h1 {
     color: var(--White);
+    font-weight: 500;
+    font-size: 28px;
 }
-.container {
-    max-width: 25rem;
+.container, 
+.thankyouState{
+    width: 26rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     background-color: var(--DarkBlue);
     border-radius: 25px;
-    padding: 1.5rem;
+    padding: 2rem;
+    
     gap: 1rem;
-}
-
-.options {
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
+    
     
 }
 
-.roundBtns {
+
+.options {
+    width: 22rem;
+    display: flex;
+    justify-content: space-between;
+    /* border: solid; */
+    
+}
+
+div.starImg  {
+    padding: 0;
+    margin: 0;
+    /* border: solid; */
+}
+
+.roundBtns,
+.starImg {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,5 +72,58 @@ h1 {
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
     /* border: solid; */
 }
+
+.roundBtns:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+.submitBtn > button {
+    background-color: var(--Orange);
+    color: var(--White);
+    border: none;
+    width: 22rem;
+    border-radius: 50px;
+    padding: 0.8rem;
+    letter-spacing: 2.5px;
+    font-weight: 700;
+}
+
+button:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+.ratingState {
+    display: none;
+}
+
+.thankyouState {
+    text-align: center;
+    /* display: none; */
+    align-items: center;
+    padding: 2.5rem;
+
+}
+
+.displayResult {
+    /* border: solid; */
+    background-color: var(--MediumGrey);
+    color: var(--Orange);
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    font-size: 17px;
+}
+
+.thankyouState img {
+    margin-bottom: 1rem;
+}
+
