@@ -15,13 +15,13 @@ btns.forEach(btn => {
         btnSelected = e.target;
         let n = e.target.textContent;
 
-        
-        
+        // need to add event listener of the summit btn
+        displayResult.textContent = `You selected ${n} out of 5`;
        
     });
 });
 
-displayResult.textContent = `You selected ${n} out of 5`;
+
 
 
 
